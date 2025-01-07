@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كسب جيجات من الشركات</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="company-name">احصل على جيجات من فودافون</h1>
+            <p id="offer-desc">تفعيل العرض المجاني لزيادة جيجاتك الآن!</p>
+        </header>
+
+        <main>
+            <section class="offer">
+                <img id="company-logo" src="https://upload.wikimedia.org/wikipedia/en/c/cc/Vodafone_2017_logo.svg" alt="الشركة" class="company-logo">
+                <div class="company-btns">
+                    <button class="company-btn" onclick="changeDesign('vodafone')">فودافون</button>
+                    <button class="company-btn" onclick="changeDesign('etisalat')">اتصالات</button>
+                    <button class="company-btn" onclick="changeDesign('orange')">أورانج</button>
+                    <button class="company-btn" onclick="changeDesign('we')">WE</button>
+                </div>
+            </section>
+
+            <section class="phone-info">
+                <form>
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="أدخل رقم الهاتف" required><br><br>
+
+                    <label for="offer">اختر العرض:</label>
+                    <select id="offer" name="offer">
+                        <option value="10GB">10 جيجا لمدة شهر</option>
+                        <option value="350GB">350 جيجا لمدة 6 شهور</option>
+                        <option value="50GB">50 جيجا لمدة شهر</option>
+                        <option value="1000GB">1000 دقيقه لمده 3 شهور</option>
+                        <option value="109GB">109 جيجا لمدة شهر</option>
+                        <option value="100EG">100ج تحويل كاش هديه</option>
+                    </select><br><br>
+
+                    <a href="#" class="btn">افتح العرض الآن</a>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 جميع الحقوق محفوظة</p>
+        </footer>
+    </div>
+
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, p {
+    color: #fff;
+}
+
+.offer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.company-btns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.company-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.company-btn:hover {
+    opacity: 0.8;
+}
+
+.phone-info {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e60000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c70000;
+}
+
+    </style>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
