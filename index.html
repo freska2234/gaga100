@@ -50,7 +50,7 @@
     </div>
 
     <style>
-       body {
+  body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #fff;
@@ -121,11 +121,23 @@ label {
 
 input, select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+select {
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="tel"] {
+    font-family: monospace;
+    letter-spacing: 2px;
 }
 
 footer {
@@ -138,10 +150,11 @@ footer {
     display: inline-block;
     background-color: #e60000;
     color: white;
-    padding: 10px 20px;
+    padding: 12px;
     font-size: 18px;
     text-decoration: none;
     border-radius: 5px;
+    width: 100%;
     transition: background-color 0.3s;
 }
 
@@ -150,7 +163,6 @@ footer {
 }
 
 /* Media Queries for Responsiveness */
-
 @media screen and (max-width: 768px) {
     .company-btns {
         flex-direction: column;
@@ -199,6 +211,17 @@ footer {
         font-size: 16px;
     }
 }
+
+/* Color change for phone number input */
+input[type="tel"].valid {
+    border: 2px solid #28a745; /* Green border */
+    background-color: #2d2d2d; /* Slightly different background */
+}
+
+input[type="tel"].invalid {
+    border: 2px solid #dc3545; /* Red border */
+}
+
 
     </style>
     <script src="script.js">
