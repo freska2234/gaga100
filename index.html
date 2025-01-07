@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>كسب جيجات من الشركات</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -50,7 +50,7 @@
     </div>
 
     <style>
-        body {
+       body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #fff;
@@ -149,9 +149,60 @@ footer {
     background-color: #c70000;
 }
 
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .company-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-btn {
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .company-logo {
+        max-width: 150px;
+    }
+
+    .phone-info {
+        padding: 15px;
+    }
+
+    label, input, select {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .company-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
+
     </style>
     <script src="script.js">
-        
+    
     </script>
 </body>
 </html>
