@@ -50,7 +50,7 @@
     </div>
 
     <style>
-  body {
+body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #fff;
@@ -140,6 +140,29 @@ input[type="tel"] {
     letter-spacing: 2px;
 }
 
+/* Make input phone number look better */
+input[type="tel"] {
+    background-color: #2d2d2d;
+    color: #fff;
+    border: 2px solid #444;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+/* Style for select box */
+select {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #2d2d2d;
+    color: #fff;
+    border: 2px solid #444;
+    padding: 12px;
+    border-radius: 5px;
+    appearance: none; /* Remove default dropdown styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 footer {
     text-align: center;
     margin-top: 40px;
@@ -150,12 +173,14 @@ footer {
     display: inline-block;
     background-color: #e60000;
     color: white;
-    padding: 12px;
+    padding: 10px 20px;
     font-size: 18px;
     text-decoration: none;
     border-radius: 5px;
-    width: 100%;
     transition: background-color 0.3s;
+    margin: 0 auto;
+    text-align: center;
+    width: auto; /* Remove full width */
 }
 
 .btn:hover {
@@ -188,7 +213,7 @@ footer {
     }
 
     .btn {
-        width: 100%;
+        width: auto;
         padding: 12px 20px;
     }
 }
@@ -221,6 +246,7 @@ input[type="tel"].valid {
 input[type="tel"].invalid {
     border: 2px solid #dc3545; /* Red border */
 }
+
 
 
     </style>
